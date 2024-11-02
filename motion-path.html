@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section-1" style="display: grid; place-items: center; height: 100vh">
+      <div class="paper-plane">
+        <img src="/public/images/arrow.svg" width="30" alt="paper-plane" />
+      </div>
+      <svg width="100%" height="100" viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,50 Q150,100 300,50 T600,50 T900,50 T1200,50 T1440,50" 
+              fill="none" 
+              stroke="#00BFFF" 
+              class="motion-path"
+              stroke-width="4"/>
+      </svg>      
+    </section>
+    <section style="display: grid; place-items: center; height: 100vh">
+      
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./src/gsap/motionPath.js"></script>
+  </body>
+</html>
