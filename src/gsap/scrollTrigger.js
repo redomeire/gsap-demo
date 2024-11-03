@@ -7,7 +7,6 @@ const timeline = gsap.timeline({
         end: 'top top',
         scrub: 2,
         pinSpacing: false,
-        // markers: true
     }
 });
 
@@ -18,3 +17,13 @@ timeline
     .to('.box', { opacity: 0, x: 1000, rotate: 360, scale: 1, stagger: 0.5 });
 
     // todo: tambahkan animasi pin pada section-2
+timeline
+        .to('.box-2', { 
+            x: 100,
+            scrollTrigger: {
+                trigger: '.section-2'
+,                end: "center center",
+                start: () => `+=${document.querySelector('.box-2').offsetHeight} bottom`,
+                pin: '.box-2'
+            }
+         })
